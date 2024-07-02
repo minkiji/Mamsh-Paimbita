@@ -20,6 +20,10 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   padding: 14px 200px 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
@@ -57,7 +61,20 @@ body {
 main {
   width: 78.5%;
   margin: 0 auto;
-  margin-top: 75px;
+  margin-top: 145px;
+}
+
+.page-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(206, 206, 206, 0.030) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(206, 206, 206, 0.030) 1px, transparent 1px);
 }
 
 .introduction {
@@ -155,10 +172,59 @@ main {
   margin: 25px 0px;
 }
 
+/* mamsh paimbita */
+
+.mp-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 100px;
+}
+
+.mp-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mp-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.mp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 40px;
+  background-color: #5136651a;
+  flex: 1;
+}
+
+.mp i {
+  font-size: 50px;
+  text-align: center;
+}
+
+.mp h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.mp p {
+  line-height: 2;
+  margin-top: 20px;
+}
+
+
 /* service */
 
 .service-section {
-  padding-top: 75px;
+  padding-top: 100px;
 }
 
 .service-container {
@@ -202,41 +268,85 @@ main {
   background-color: rgba(154, 197, 181, 0.562);
 }
 
-/* hr */
+/* frequently asked questions */
+
+.faq-header {
+  padding-top: 150px;
+}
+
+.faq {
+  width: auto;
+}
+
+.faq-parent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.faqs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  flex: 1;
+}
+
+.faq li {
+  list-style: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #5136651a;
+}
+
+.faq li label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+label::after {
+  content: '+';
+  margin-right: 10px;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.faq .content {
+  color: #E7F2EF;
+  padding: 0 10px;
+  line-height: 2;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.faq input[type="checkbox"]:checked + label + .content {
+  max-height: 400px;
+  padding: 10px 10px 20px;
+}
+
+.faq input[type="checkbox"]:checked + label::after {
+  content: '-';
+}
+
+/* styles */
 
 .horizontal {
   margin-top: 20px;
   margin-bottom: 25px;
 }
 
-/* collections */
-
-.details-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.details-container {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  gap: 40px;
-}
-
-.details {
-  width: 450px;
-  height: auto;
-  background-color: #a8d0c109;
-  border-radius: 10px;
-  padding: 40px;
-  flex: 1;
-}
-
-.details h2 {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.details p {
-  line-height: 2;
+.highlight {
+  background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=a8d0c181);
+  margin: -2px -6px;
+  padding:  2px  6px;
 }
