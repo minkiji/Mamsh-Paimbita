@@ -15,6 +15,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.65;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .navbar {
@@ -189,7 +191,7 @@ main {
 
 .mp-container {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 40px;
 }
 
@@ -197,8 +199,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 300px;
-  height: 300px;
+  width: auto;
+  height: auto;
   border-radius: 10px;
   padding: 40px;
   background-color: #5136651a;
@@ -336,6 +338,14 @@ input[type="checkbox"] {
 
 .faq input[type="checkbox"]:checked + label::after {
   content: '-';
+}
+
+/* footer */
+
+footer {
+  padding-top: 100px;
+  width: 78.5%;
+  margin: 0 auto;
 }
 
 /* styles */
