@@ -28,6 +28,7 @@ body {
   left: 0;
   padding: 14px 200px 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 1;
 }
 
 .navbar ul {
@@ -66,18 +67,7 @@ main {
   margin-top: 145px;
 }
 
-.page-background {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background-size: 40px 40px;
-  background-image:
-    linear-gradient(to right, rgba(206, 206, 206, 0.030) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(206, 206, 206, 0.030) 1px, transparent 1px);
-}
+
 
 .introduction {
   display: flex;
@@ -226,16 +216,17 @@ main {
 /* service */
 
 .service-section {
-  padding-top: 100px;
+  padding-top: 150px;
 }
 
 .service-container {
   display: flex;
-  align-items: center;
   gap: 40px;
 }
 
 .service {
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 
@@ -248,8 +239,13 @@ main {
   line-height: 2;
 }
 
-.service a {
+.explore {
+  margin-top: auto;
+}
+
+.explore a {
   color: #A8D0C1;
+  margin-top: auto;
 }
 
 .service::before {
@@ -343,9 +339,82 @@ input[type="checkbox"] {
 /* footer */
 
 footer {
-  padding-top: 100px;
+  padding-top: 150px;
+  padding-bottom: 100px;
   width: 78.5%;
   margin: 0 auto;
+}
+
+.mp-footer {
+  display: flex;
+  align-items: flex-start;
+  gap: 250px;
+}
+
+.mp-footer-title {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mp-footer ul li {
+  list-style: none;
+}
+
+.mp-footer-title h2 {
+  font-size: 30px;
+  line-height: 120%;
+}
+
+.mp-footer-title ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.mp-footer-title ul li a {
+  font-size: 25px;
+  color: #E7F2EF;
+  text-decoration: none;
+}
+
+.mp-footer-title ul li a i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5136651a;
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+}
+
+.mp-links-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex: 1;
+}
+
+.mp-links {
+  background-color: #5136651a;
+  padding: 30px;
+  border-radius: 20px;
+  width: auto;
+  height: auto;
+  flex: 1;
+}
+
+.mp-links ul li a {
+  text-decoration: none;
+  color: #E7F2EF;
+  transition: 0.2s;
+  line-height: 2;
+  white-space: nowrap;
+}
+
+.mp-links ul li a:hover {
+  opacity: 0.6;
 }
 
 /* styles */
