@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
+// Fade up load
 const elements = document.querySelectorAll(".animate-load");
 
 function fadeInElements() {
@@ -52,3 +52,15 @@ function isInView(element) {
     (window.innerheight - 200 || document.documentElement.clientHeight - 200)
   )
 }
+
+
+// Header effect
+document.addEventListener('scroll' , () => {
+  const header = document.querySelector('nav');
+
+  if (window.scrollY > 0) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
