@@ -370,8 +370,6 @@ input[type="checkbox"] {
 /* footer */
 
 footer {
-  padding-top: 150px;
-  padding-bottom: 100px;
   width: 78.5%;
   margin: 0 auto;
 }
@@ -380,6 +378,8 @@ footer {
   display: flex;
   align-items: flex-start;
   gap: 250px;
+  padding-top: 150px;
+  padding-bottom: 100px;
 }
 
 .mp-footer-title {
