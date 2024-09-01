@@ -517,10 +517,25 @@ footer {
   width: 50px;
   text-align: center;
   color: #E7F2EF;
+  transition: 0.2s;
+}
+
+.contact-socials i:hover {
+  color: #A8D0C1;
 }
 
 .social-name p {
   white-space: nowrap;
+}
+
+.social-name a {
+  color: #E7F2EF;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.social-name a:hover {
+  color: #A8D0C1;
 }
 
 /* contact page aside */
