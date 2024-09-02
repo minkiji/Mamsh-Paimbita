@@ -46,7 +46,7 @@ nav.scrolled {
 .navbar ul {
   display: flex;
   align-items: center;
-  gap: 75px;
+  gap: 65px;
 }
 
 .navbar ul li {
