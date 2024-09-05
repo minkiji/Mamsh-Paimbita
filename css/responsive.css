@@ -358,7 +358,7 @@
 
 }
 
-@media (max-width: 429px) {
+@media (max-width: 400px) {
 
   .contact-page h1 {
     font-size: 40px;
@@ -374,6 +374,10 @@
 
   .featured-photos {
     flex-direction: column;
+  }
+
+  .contact-page h1 {
+    font-size: 37px;
   }
 
 }
