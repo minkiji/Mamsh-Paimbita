@@ -340,6 +340,10 @@
     font-size: 55px;
   }
 
+  .contact-page h1 {
+    font-size: 47.5px;
+  }
+
   #visual-block {
     display: block;
   }
@@ -349,7 +353,7 @@
 @media (max-width: 430px) {
 
   .contact-page h1 {
-    font-size: 42px;
+    font-size: 44px;
   }
 
   .intro h1 {
